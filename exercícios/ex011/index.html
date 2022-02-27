@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídias em html5</title>
+</head>
+<body>
+  <h1>Imagem dinâmica</h1>  
+  <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+  <!--a tag source media serve para adaptar a imagem do site conforme a necessidade do usuário , aumentando e diminuindo.
+sempre respeitando a ordem das fotos , a grande como principal(img-src), a media e a pequena como segundárias(source media), lembrando que o source da fot pequena tem que estar antes do source da foto média para o navegador reconhecer. -->
+  <picture>
+      <source media="(max-width:750px )" srcset="imagens/fotop.png" type="image/png">
+<source media="(max-width: 1000px )" srcset="imagens/fotom.png" type="image/png">
+   <img src="imagens/fotog.png" alt="imagem flexivel">   
+  </picture>
+  
+  <h1>Reproduzindo Áudios em HTML5</h1>
+  <p>Vamos aprender a reproduzir audios em html5</p>
+  <audio src="midia/audio03.mp3" controls autoplay></audio>
+  
+  <!--outra opção de carregamento é com o parametro audio onde voce pode colocar o mesmo audio em vários formatos para baixar em qualquer navegador , mp3 , ogg e wav. 
+  mas wav são arquivos muito pesados , e para celulares não são recomendados.-->
+  <p>
+    outras formas de reproduzir audios
+  </p>
+ <audio preload="metadata" autoplay controls><!--caso você queira que ele se auto reproduza ao final da musica pode inserir o parametro loop após controls-->
+  <source src="midia/audio02.ogg" type="audio/ogg">
+  <source src="midia/audio02.wav" type="audio/wav">
+   <source src="midia/audio02.mp3" type="audio/mpeg">
+   </audio>
+ <p>infelizmente seu navegador não consegue reporduzir o audio.</p>
+ <h1>Inserindo Vídeos</h1>
+ <p>Inserindo Videos no meu site</p><!--para se inserir vídos pode se usar o site pexels ou 4k video downloader entre outros-->
+
+</body>
+</html>

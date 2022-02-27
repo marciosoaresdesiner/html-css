@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com html5</title>
+</head>
+<body>
+    <!--recomenda-se que os videos assim como as mídias sejam feitos nas versoes para varios navegadores mp4,ogv,m4v,webm na tag 'type', para isso podemos usar o conversor online convert -->
+    <h1>inserindo Videos localmente</h1>
+    <p>Estes vídeos estão hospedados no meu servidor.</p>
+    <video poster="imagens.02/manu800.jpg" src="videos/video01.mp4" width="500" controls autoplay loop></video> <!--não pode se esquecer da tag 'controls' pois sem ela o player não aparece-->
+    <video poster="imagens.02/andrew.jpg" width="500"  src="videos/video02.mp4" controls autoplay loop></video>
+    <!--a tag loop serve para repetir o video sem precisar dar play novamente.-->
+    <video poster="imagens.02/andrew400.jpg"  src="videos/video03.mp4" width="500" controls autoplay loop></video>
+<!--a tag autoplay serve para reproduzir o video sem precisar dar play-->
+    <video poster="imagens.02/pinguin.jpg" controls src="videos/video04.mp4" width="500"></video>
+<!--esta parte serve para configurar o mesmo vídeo nas suas versoes para todos os navegadores usando a tag 'type'onde a ordem é imprescindivel , primeiro mp4 ,webm,m4v,ogg respectivamente .-->
+    <video width="500" controls>
+        <source src="videos/video01.mp4" type="video01">
+     <source src="videos/video02.mp4" type="video02">  
+     <source src="videos/video03.mp4" type="video03">
+     <source src="videos/video04.mp4" type="video04"> 
+    </video>
+<h1>Inserindo vídeos do you tube</h1>
+<!--quando se usa vídeos direto dos seridores ,entrando em incorporar, no caso aqui o you tube não se consome dados do servidor local e sim do próprio you tube , não gerando custos para o cliente.-->
+<iframe width="500" height="315" src="https://www.youtube.com/embed/IhBALKMVd_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+entrando em<h1>inserindo vídeos do vimeo</h1><!--vimeo é uma plataforma paga que dá para incluir parametros direto nela entrando em + opções e depois copiando a iframe dentro de incorporação.-->
+<iframe src="https://player.vimeo.com/video/656704401?h=2f29f806b1&autoplay=1&loop=1&byline=0&portrait=0" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+</body>
+</html>

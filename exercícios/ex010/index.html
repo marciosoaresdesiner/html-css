@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <!--para inserir um link deve-se apenas por a tag "a" de ancora e para que se abra em outra aba se utiliza a tag target blank com rel external-->
+<h1>Usando links externos</h1>
+<p>você pode acessar meu <a href="https://gustavoguanabara.github.io/"target="_blank" rel="external">repositório público no github</a>.</p>
+<p>você tambem pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no you tube</a></p>
+<h1>trabalhando com links internos</h1>eles são usados para fazermligação com 
+<!--serve para ligar com outra página dentro do nosso servidor...a tag rel next serve apenas para identar melhor o site mas visualmente não muda a funcionalidade do site-->
+<p>Esta é a primeira página do site se quiser pode acessar <a href="pag002.html" rel="next">a página 02</a>
+</p>
+<!--você também pode acessar outras pastas dentro do seu site endereçando ela pela tag href....a tag target self serve para que não sejam abertos outras abas no mesmo site-->
+<p>acesse também nossa <a href="Noticias/pag003.html"rel="next" target="_self">pagina de notícias</a></p>
+<h1>links para downloads</h1>
+<!--esta tag auxilia a faze downloads de pdf's internos-->
+<ul>
+    <li><a href="livro/ANDREW-ASAFE.docx" download="#" type="application/pdf">baixar o livro</a></li>
+    <li><a href="livro/ANDREW-ASAFE.docx" download="meulivro.zip" type="application/zip">livro compactado em zip</a></li>
+    <!--esta tag serve para fazer downloads em pastas zipadas.-->
+</ul>
+</body>
+</html>

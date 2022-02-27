@@ -1,0 +1,36 @@
+
+@charset "utf-8";
+
+body{
+    background-color:#1FFFFF ;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+h1{
+color:rgb(36, 158, 180) ;
+}
+/*sempre que for formatar um item em específico lembrar de colocar '#'no meio para localizar no html. e no html se coloca a tag 'id'
+e para identificar uma classe em hltm se coloca a tag 'class', mas no css se coloca '.'(ponto) */
+h1#principal{
+text-align: center;
+color: darkcyan;
+background-color: rgba(189, 183, 107, 0.562);
+}
+h2{
+color: rgb(41, 192, 117);
+
+}
+p{
+
+}
+.basico{
+color: #f3f71f;
+}
+.intermediario{
+color:#615fe4 ;
+}
+.avancado{
+color: #FF369E;
+}
+.destaque{
+background-color: rgba(255, 251, 0, 0.842);
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+}
+header{
+    background-color: rgba(255, 0, 212, 0.295);
+    padding: 10px;
+    margin: 10px;
+}
+nav{
+    background-color: coral;
+    padding: 3px;
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.541) ;
+
+
+
+}
+h1{
+    box-shadow: 3px 5px 7px 1px rgba(0, 0, 0, 0.651);
+}
+nav > a{
+    text-decoration: none;
+    color: yellow;
+    font-weight:bold;
+    margin-right: 30px;
+}
+main{
+    /*comanda a parte do meio do site*/
+    background-color:beige;
+    padding: 10px;
+    margin: 10px;
+    border-radius:30px ;
+    box-shadow: 4px 4px 9px 0px black;
+
+}
+section{
+    background-color: white;
+    padding: 3px;
+    text-align: center;
+}
+article{
+    /* parte abaixo do main*/
+    padding: 5px;
+    background-color: aquamarine;
+}
+section > h2{
+    /*laterais do site*/
+    background-color: steelblue;
+    padding: 2px;
+    text-decoration: dashed;
+
+}
+section h1{
+    background-color:silver;
+    pad: 3px;
+    text-decoration: double;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    color:chocolate;
+}
+section > aside {
+  
+background-color: gray;
+}
+footer{
+    background-color:chartreuse;
+    color: azure;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+footer > p{
+    margin: 0px;
+}
+div#bola{
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 50%;
+
+}
+
+    </style>
+</head>
+<!--agrupando tags de forma semântica mod2 video 26-->
+<body>
+<header>
+    <h1>meu site</h1>
+    <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </nav>
+    <main>
+        <section id="assuntos">
+            <h2>Esporte ciências Tecnologia & Lazer !</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequuntur quo aliquid. Optio illum provident magnam architecto repellendus fugit magni alias, voluptas eligendi itaque reprehenderit accusantium commodi, reiciendis non voluptatum!</p>
+        </section>
+        <section id="noticias">
+            <article>
+               <h1>noticias sobre o brasil</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ducimus voluptatibus, necessitatibus nam facere ratione porro officiis eius enim, assumenda quae impedit asperiores rem, itaque labore eveniet tenetur officia nostrum.</p>
+                  <aside><p>Artigo escrito por Joe!</p>
+                </aside>
+            </article>
+<article>
+
+</article>
+        </section>
+
+    </main>
+   <footer>
+<p>Desenvolvido por Márcio Designs</p>
+   </footer> 
+   <div id="bola"></div>
+</header>
+</body>
+</html>
